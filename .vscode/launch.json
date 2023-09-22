@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "launch process",
+            "request": "launch",
+            "program": "${workspaceFolder}/generator.lua",
+            // "runtimeExecutable": "D:/msys64/mingw64/bin/luajit.exe",
+            "stopOnEntry": false,
+            "type": "lua",
+            "env": {
+                "LUA_PATH": "${workspaceFolder}\\?.lua"
+            },
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "cats",
+            "request": "launch",
+            "program": "${workspaceFolder}/generator_cats.lua",
+            // "runtimeExecutable": "D:/msys64/mingw64/bin/luajit.exe",
+            "stopOnEntry": false,
+            "type": "lua",
+            "env": {
+                "LUA_PATH": "${workspaceFolder}\\?.lua"
+            },
+            "console": "integratedTerminal",
+        },
+    ]
+}
